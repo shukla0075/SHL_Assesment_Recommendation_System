@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SHL Assessment Recommender</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>SHL Assessment Recommender</h1>
+    <p class="subtitle">
+        Enter a hiring requirement to receive relevant SHL assessment recommendations.
+    </p>
+
+    <form method="post">
+        <input
+            type="text"
+            name="query"
+            placeholder="e.g. Python developer with SQL and teamwork skills"
+            required
+        >
+        <button type="submit">Recommend Assessments</button>
+    </form>
+
+    {% if results %}
+        <div class="results">
+            <h3>Recommended Assessments</h3>
+
+            {% for r in results %}
+                <div class="result-card">
+                    <b>{{ r.name }}</b>
+                    <div class="result-meta">
+                        Test Type: {{ r.test_type }}
+                    </div>
+                    <a href="{{ r.url }}" target="_blank">View on SHL</a>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <div class="footer">
+        SHL Recommendation Demo • Local Deployment
+    </div>
+</div>
+
+</body>
+</html>

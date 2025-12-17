@@ -1,0 +1,112 @@
+/* --------- Base --------- */
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f6f8fa;
+    color: #1f2937;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------- Layout --------- */
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* --------- Header --------- */
+h1 {
+    margin-top: 0;
+    font-size: 26px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.subtitle {
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+/* --------- Form --------- */
+form {
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #2563eb;
+}
+
+/* --------- Button --------- */
+button {
+    margin-top: 16px;
+    padding: 12px 22px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
+
+/* --------- Results --------- */
+.results {
+    margin-top: 40px;
+}
+
+.result-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    background-color: #f9fafb;
+}
+
+.result-card b {
+    font-size: 16px;
+    color: #111827;
+}
+
+.result-meta {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+/* --------- Links --------- */
+.result-card a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.result-card a:hover {
+    text-decoration: underline;
+}
+
+/* --------- Footer --------- */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    color: #9ca3af;
+}
