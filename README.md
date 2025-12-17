@@ -219,12 +219,4 @@ Developed as part of the **SHL AI Intern – Generative AI Assignment**.
 
 ```
 
----
 
-If you want, next I can:
-- Verify this README line-by-line against the PDF  
-- Help you write a **short submission explanation**
-- Prepare **what to say if recall is questioned**
-
-Just tell me 👍
-```
